@@ -1,0 +1,39 @@
+{
+    "project_info": {
+      "project_number": "703965490914",
+      "project_id": "jastipinaja-d00ad",
+      "storage_bucket": "jastipinaja-d00ad.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:703965490914:android:198bbe444b9a5bc0bdf8bb",
+          "android_client_info": {
+            "package_name": "com.jastip.ReactNativeFlipper"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "703965490914-lkrvt0b4c8lih6kuep9nb5pgvb9t5cbd.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyCA72Yo4HeqtT0AD9NQvx7ag9-EFnFh71U"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "703965490914-lkrvt0b4c8lih6kuep9nb5pgvb9t5cbd.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }

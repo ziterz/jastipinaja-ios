@@ -1,0 +1,27 @@
+# box: nao20010128nao/android-build:latest
+box: reactnativecommunity/react-native-android
+# increase no-response-timeout from default (5 minutes) to 15 minutes
+no-response-timeout: 75
+# increase default timeout from default (25 minutes) to 75 minutes
+command-timeout: 75
+# Build definition
+build:
+  # The steps that will be executed on build
+  steps:
+    - script:
+        name: Show Folders
+        code: ls
+    - script:
+        name: Install ENV INFO
+        code: npm i -g envinfo && envinfo
+    - script:
+        name: Install dependencies
+        code: yarn install
+    - script:
+        name: build apk
+        code: |
+          cd android && chmod +x gradlew
+          ./gradlew --full-stacktrace assembleRelease
+          ls app/build/outputs/
+          chmod +x post.sh
+          ./post.sh
